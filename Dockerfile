@@ -4,7 +4,7 @@ WORKDIR /app
 COPY api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt 
 
-# Stage 2: Runtime environment
+# Stage 2: Runtime environment 
 FROM python:3.9-slim-bookworm
 WORKDIR /app
 # Copy installed dependencies from the builder stage
