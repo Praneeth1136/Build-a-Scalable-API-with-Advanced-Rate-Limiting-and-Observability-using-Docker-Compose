@@ -1,6 +1,6 @@
 # Stage 1: Build environment
 FROM python:3.9-slim-bookworm AS builder
-WORKDIR /app
+WORKDIR /app 
 COPY api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
