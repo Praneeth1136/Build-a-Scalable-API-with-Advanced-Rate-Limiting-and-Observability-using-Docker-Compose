@@ -16,6 +16,6 @@ RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
 COPY api ./api
 ENV PYTHONPATH=/app 
-EXPOSE 8080
+EXPOSE 8080 
 
 CMD ["uvicorn", "api.src.main:app", "--host", "0.0.0.0", "--port", "8080"]
